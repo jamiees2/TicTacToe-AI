@@ -1,0 +1,31 @@
+﻿<Window x:Class="TicTacToe_AI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox Header="Tic-Tac-Toe" Height="210" HorizontalAlignment="Left" Margin="94,56,0,0" Name="ticTacBox" VerticalAlignment="Top" Width="270">
+            <Grid Name="ticTacGrid">
+                <Button Height="44" HorizontalAlignment="Left" Margin="23,14,0,0" Name="box1" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="1" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="104,14,0,0" Name="box2" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="2" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="185,14,0,0" Name="box3" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="3" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="23,78,0,0" Name="box4" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="4" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="104,78,0,0" Name="box5" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="5" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="185,78,0,0" Name="box6" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="6" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="23,142,0,0" Name="box7" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="7" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="104,142,0,0" Name="box8" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="8" />
+                <Button Height="44" HorizontalAlignment="Left" Margin="185,142,0,0" Name="box9" VerticalAlignment="Top" Width="61" Click="box2_Click" Tag="9" />
+            </Grid>
+        </GroupBox>
+        <Label Content="O byrjar" Height="38" HorizontalAlignment="Left" Margin="97,12,0,0" Name="infoLabel" VerticalAlignment="Top" Width="297" FontSize="16" />
+        <Button Content="Nýr leikur" Height="23" HorizontalAlignment="Left" Margin="395,11,0,0" Name="newGame" VerticalAlignment="Top" Width="75" Click="newGame_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="424,106,0,0" Name="scoreX" VerticalAlignment="Top" Width="48" IsReadOnly="True" />
+        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,147,33,0" Name="scoreO" VerticalAlignment="Top" Width="46" IsReadOnly="True" />
+        <Label Content="X:" Height="28" HorizontalAlignment="Left" Margin="395,104,0,0" Name="scoreXLabel" VerticalAlignment="Top" />
+        <Label Content="O:" Height="28" HorizontalAlignment="Left" Margin="393,142,0,0" Name="scoreOLabel" VerticalAlignment="Top" />
+        <Label Content="Staða:" Height="28" HorizontalAlignment="Left" Margin="395,69,0,0" Name="scoreLabel" VerticalAlignment="Top" Width="77" />
+        <Button Content="Endustilla stöðu" Height="23" HorizontalAlignment="Left" Margin="395,226,0,0" Name="resetScore" VerticalAlignment="Top" Width="92" Click="resetScore_Click" />
+        <CheckBox Content="CPU byrjar" Height="16" HorizontalAlignment="Left" Margin="32,283,0,0" Name="byrjarBox" VerticalAlignment="Top" Width="107" Checked="byrjarBox_CheckChanged" Unchecked="byrjarBox_CheckChanged" Visibility="Hidden" IsEnabled="False" />
+        <TextBox Height="23" HorizontalAlignment="Right" IsReadOnly="True" Margin="0,186,31,0" Name="scoreDraw" VerticalAlignment="Top" Width="48" />
+        <Label Content="Jafntefli:" Height="28" HorizontalAlignment="Left" Margin="362,0,0,102" Name="scoreDrawLabel" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>
